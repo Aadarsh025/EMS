@@ -1,4 +1,3 @@
-
 require('dotenv').config();
 
 const app = require('./src/app');
@@ -12,7 +11,7 @@ async function startServer() {
 
     app.listen(PORT, () => {
       console.log(`Server running at http://localhost:${PORT}`);
-      console.log('API base URL: http://localhost:' + PORT + '/api');
+      console.log(`API base URL: http://localhost:${PORT}/api`);
     });
   } catch (error) {
     console.error('Failed to start server:', error.message);
@@ -20,4 +19,7 @@ async function startServer() {
   }
 }
 
-startServer();
+// Only start the listener when run directly (node server.js), not on Vercel
+if (require.main === module) {
+  startServer();
+}
