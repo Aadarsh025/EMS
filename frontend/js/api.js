@@ -1,7 +1,11 @@
 
 // const API = 'http://localhost:5000/api';
-const API = 'https://ems-qh9r.onrender.com';
+const API =
+  location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+    ? 'http://localhost:5000/api'
+    : 'https://ems-qh9r.onrender.com/api';
 
+    
 const Auth = {
   get token() {
     return localStorage.getItem('token');
