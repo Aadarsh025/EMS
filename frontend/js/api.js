@@ -1,5 +1,6 @@
 
-const API = 'http://localhost:5000/api';
+// const API = 'http://localhost:5000/api';
+const API = 'https://ems-qh9r.onrender.com';
 
 const Auth = {
   get token() {
