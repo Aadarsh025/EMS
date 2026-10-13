@@ -77,3 +77,9 @@ Errors: `400` validation (with per-field `errors`), `401` not signed in, `403` w
 1. Import `postman/employee-api.postman_collection.json`.
 2. Run **Auth → Login (admin)** first. It saves the token automatically.
 3. Run the **Employees** requests in order, or use the Collection Runner. Create saves `employeeId` for the next requests, and each request has a status-code test.
+
+## 👨‍💻 Author
+
+**Aadarsh Tripathi**
+
+- Project: [peopledesk](https://ems01-frontend.vercel.app/)
